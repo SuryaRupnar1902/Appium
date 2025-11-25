@@ -36,4 +36,5 @@ public class LoginPage extends BasePage {
         driver.hideKeyboard();
         return tapLogin();
     }
+
 }

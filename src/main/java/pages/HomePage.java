@@ -24,4 +24,7 @@ public class HomePage extends BasePage {
         click(myIdentityButton);
         return new MyIdentityPage(driver);
     }
+    public boolean isHomeIconDisplayed() {
+        return driver.findElement(homeIcon).isDisplayed();
+    }
 }

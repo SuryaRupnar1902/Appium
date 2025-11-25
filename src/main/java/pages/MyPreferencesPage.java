@@ -25,7 +25,6 @@ public class MyPreferencesPage extends BasePage {
 
         click(AppiumBy.accessibilityId(preferenceName));
     }
-
     public void updateIdentity(){
         click(Identity);
     }

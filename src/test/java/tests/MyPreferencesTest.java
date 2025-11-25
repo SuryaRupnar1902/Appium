@@ -25,6 +25,10 @@ public class MyPreferencesTest extends BaseTest {
         preferencesPage.clickPreferenceByName("Mom/Child Outing");
         preferencesPage.clickPreferenceByName("Chatting Over Coffee");
         preferencesPage.clickPreferenceByName("Connect & Talk Online");
+//        preferencesPage.clickPreferenceByName("Shared Interests & Fun");
+//        preferencesPage.clickPreferenceByName("Support & Advice Exchange");
+//        preferencesPage.clickPreferenceByName("Trips & Retreats For Moms");
+
 
         preferencesPage.updateIdentity();
         System.out.println("My preference updated successfully");

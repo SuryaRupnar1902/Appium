@@ -1,9 +1,14 @@
 package tests;
 
 import base.BaseTest;
+import io.appium.java_client.AppiumBy;
+import org.testng.Assert;
 import pages.HomePage;
 import pages.LoginPage;
 import org.testng.annotations.Test;
+import base.BasePage;
+
+import javax.security.auth.login.LoginContext;
 
 public class LoginTest extends BaseTest {
 
@@ -11,9 +16,10 @@ public class LoginTest extends BaseTest {
     public void validLoginShouldNavigateToHome() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = loginPage.login("mitali@mailinator.com", "Pass@1234");
+            Assert.assertTrue(homePage.isHomeIconDisplayed(),
+                    "Home icon is not displayed. Login may have failed.");
 
-
-        homePage.tapHomeIcon();
+        //homePage.tapHomeIcon();
 
         System.out.println("Login test completed successfully.");
     }

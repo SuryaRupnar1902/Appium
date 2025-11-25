@@ -14,6 +14,9 @@
 
         <classes>
             <class name="tests.LoginTest"/>
+            <class name="tests.MyIdentityTest"/>
+            <class name="tests.MyPreferencesTest"/>
+            <class name="tests.WomantyMsgTest"/>
         </classes>
     </test>
 

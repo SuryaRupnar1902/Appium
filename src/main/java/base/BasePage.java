@@ -43,6 +43,13 @@ public abstract class BasePage {
         element.clear();
         element.sendKeys(text);
     }
+    public boolean isElementDisplayed(By locator) {
+        try {
+            return driver.findElement(locator).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
 
     protected By byAccessibilityId(String id) {
         return AppiumBy.accessibilityId(id);
