@@ -15,7 +15,7 @@ public class LanguageTest extends BaseTest {
         HomePage homePage = loginPage.login(ConfigReader.get("username"), ConfigReader.get("password"));
         homePage.tapHomeIcon();
         LanguagePage languagePage = new LanguagePage(getDriver());
-        languagePage.selectLanguage("Español");//Espanol Français,english
+        languagePage.selectLanguage("Español");//Espanol Français,English
 
     }
 

@@ -5,6 +5,7 @@ import pages.LoginPage;
 import pages.HomePage;
 import pages.MyIdentityPage;
 import org.testng.annotations.Test;
+import utils.ConfigReader;
 
 public class MyIdentityTest extends BaseTest {
 
@@ -12,7 +13,7 @@ public class MyIdentityTest extends BaseTest {
     public void updateBioSuccessfully() {
         // 1. Login
         LoginPage loginPage = new LoginPage(getDriver());
-        HomePage homePage = loginPage.login("mitali@mailinator.com", "Pass@1234");
+        HomePage homePage = loginPage.login(ConfigReader.get("username"), ConfigReader.get("password"));
 
         // 2. Navigate to "My Identity"
         homePage.tapHomeIcon();

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.MyPreferencesPage;
+import utils.ConfigReader;
 
 public class MyPreferencesTest extends BaseTest {
 
@@ -16,7 +17,7 @@ public class MyPreferencesTest extends BaseTest {
     public void myPreferencesTest(){
 
         LoginPage loginPage = new LoginPage(getDriver());
-        HomePage homePage = loginPage.login("mitali@mailinator.com", "Pass@1234");
+        HomePage homePage = loginPage.login(ConfigReader.get("username"),ConfigReader.get("password"));
         homePage.tapHomeIcon();
         // 2. Navigate to "My Identity"
         MyPreferencesPage preferencesPage = new MyPreferencesPage(getDriver());
