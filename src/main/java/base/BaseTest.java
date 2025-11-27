@@ -18,5 +18,6 @@ public abstract class BaseTest {
 
     protected AndroidDriver getDriver() {
         return DriverManager.getDriver();
+
     }
 }
