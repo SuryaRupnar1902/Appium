@@ -25,7 +25,6 @@ public class LanguagePage extends BasePage {
         driver.findElement(AppiumBy.xpath(finalXpath)).click();
         click(confirmButton);
 
-
     }
 
    public void clickLanguageButton(){

@@ -12,7 +12,7 @@ import javax.security.auth.login.LoginContext;
 
 public class LoginTest extends BaseTest {
 
-    @Test(groups = {"smoke"})
+    @Test()
     public void validLoginShouldNavigateToHome() {
         LoginPage loginPage = new LoginPage(getDriver());
         HomePage homePage = loginPage.login("mitali@mailinator.com", "Pass@1234");

@@ -20,5 +20,6 @@ public class WomunityTest extends BaseTest {
         womunity.loadNextCategory();
         Thread.sleep(2000);
         womunity.printAllCategories();
-        Thread.sleep(2000);    }
+        Thread.sleep(2000);
+    }
 }
