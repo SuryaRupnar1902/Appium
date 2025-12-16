@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8b402eaa-1069-44fc-9bf3-db7054cd42a4" name="Changes" comment="LangugeTest Case Added">
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LanguagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LanguagePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/WomunityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/WomunityTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SuryaRupnar1902&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SuryaRupnar1902/Appium.git&quot;,
+    &quot;accountId&quot;: &quot;94975393-8ce5-48e6-adce-f5c70210d867&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="35NUYkYYmhe6Qr1jc5d7UrVTtQ4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LaunchApp.executor": "Run",
+    "Application.LounchApp.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "TestNG.LanguageTest.executor": "Run",
+    "TestNG.LanguageTest.testLanguage.executor": "Run",
+    "TestNG.LoginTest (1).executor": "Run",
+    "TestNG.LoginTest.executor": "Run",
+    "TestNG.LoginTest.validLoginShouldNavigateToHome.executor": "Run",
+    "TestNG.MyIdentityTest.executor": "Run",
+    "TestNG.MyPreferencesTest.myPreferencesTest.executor": "Run",
+    "TestNG.WomantyMsgTest.WomantyMsgTest.executor": "Run",
+    "TestNG.WomantyMsgTest.executor": "Run",
+    "TestNG.WomunityTest.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/LENOVO/IdeaProjects/NewAppium/src/test/java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/LENOVO/IdeaProjects/NewAppium/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\LENOVO\IdeaProjects\NewAppium\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="base" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.LanguageTest">
+    <configuration name="LanguageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LanguageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LanguageTest.testLanguage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LanguageTest" />
+      <option name="METHOD_NAME" value="testLanguage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="base.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="baseold" />
+      <option name="MAIN_CLASS_NAME" value="baseold.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyPreferencesTest.myPreferencesTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.MyPreferencesTest" />
+      <option name="METHOD_NAME" value="myPreferencesTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WomantyMsgTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WomantyMsgTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WomunityTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NewAppium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.WomunityTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.WomunityTest" />
+        <item itemvalue="TestNG.WomantyMsgTest" />
+        <item itemvalue="TestNG.MyPreferencesTest.myPreferencesTest" />
+        <item itemvalue="TestNG.LanguageTest.testLanguage" />
+        <item itemvalue="TestNG.LanguageTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.27397.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8b402eaa-1069-44fc-9bf3-db7054cd42a4" name="Changes" comment="" />
+      <created>1762950075824</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762950075824</updated>
+      <workItem from="1762950076932" duration="8575000" />
+      <workItem from="1763014915575" duration="7351000" />
+      <workItem from="1763091353267" duration="409000" />
+      <workItem from="1763356655091" duration="6179000" />
+      <workItem from="1763460855571" duration="16575000" />
+      <workItem from="1763613483552" duration="47156000" />
+      <workItem from="1763963499872" duration="10103000" />
+      <workItem from="1764046705621" duration="15964000" />
+      <workItem from="1764132763526" duration="21913000" />
+      <workItem from="1764578832406" duration="3827000" />
+      <workItem from="1764931333219" duration="2998000" />
+      <workItem from="1765343128008" duration="9898000" />
+      <workItem from="1765701805825" duration="29000" />
+    </task>
+    <task id="LOCAL-00001" summary="testng">
+      <option name="closed" value="true" />
+      <created>1763731074367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1763731074367</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Update Identity">
+      <option name="closed" value="true" />
+      <created>1763804568553</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763804568553</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" MSG test added">
+      <option name="closed" value="true" />
+      <created>1764050840893</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1764050840893</updated>
+    </task>
+    <task id="LOCAL-00004" summary="LangugeTest Case Added">
+      <option name="closed" value="true" />
+      <created>1764227922338</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1764227922338</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="testng" />
+    <MESSAGE value="Update Identity" />
+    <MESSAGE value=" MSG test added" />
+    <MESSAGE value="LangugeTest Case Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="LangugeTest Case Added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

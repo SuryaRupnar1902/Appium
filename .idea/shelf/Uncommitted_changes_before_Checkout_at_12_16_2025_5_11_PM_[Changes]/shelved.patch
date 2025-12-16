@@ -1,0 +1,94 @@
+Index: src/main/java/pages/LanguagePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport base.BasePage;\r\nimport io.appium.java_client.AppiumBy;\r\nimport io.appium.java_client.android.AndroidDriver;\r\nimport org.openqa.selenium.By;\r\nimport base.BaseTest;\r\n\r\npublic class LanguagePage extends BasePage {\r\n\r\n   private final By Language= AppiumBy.xpath(\"//android.widget.Button[@content-desc=\\\"Languages\\\"]\");\r\n    private final String languageOption = \"//android.widget.ImageView[@content-desc='%s']\";\r\n    private final By confirmButton=AppiumBy.xpath(\"//android.widget.Button[@content-desc=\\\"Confirm\\\"]\");\r\n\r\n\r\n\r\n    public LanguagePage(AndroidDriver driver) { super(driver);\r\n    }\r\n\r\n    public  void  selectLanguage(String language) {\r\n\r\n        clickLanguageButton();\r\n        String finalXpath = String.format(languageOption, language);\r\n        waitForVisible(By.xpath(finalXpath));\r\n        driver.findElement(AppiumBy.xpath(finalXpath)).click();\r\n        click(confirmButton);\r\n\r\n\r\n    }\r\n\r\n   public void clickLanguageButton(){\r\n      click(Language);\r\n   }\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/pages/LanguagePage.java b/src/main/java/pages/LanguagePage.java
+--- a/src/main/java/pages/LanguagePage.java	(revision 811b4fe810b7b77034eaa086f7d50dfcd1fbf9b0)
++++ b/src/main/java/pages/LanguagePage.java	(date 1765775655958)
+@@ -25,7 +25,6 @@
+         driver.findElement(AppiumBy.xpath(finalXpath)).click();
+         click(confirmButton);
+ 
+-
+     }
+ 
+    public void clickLanguageButton(){
+Index: src/test/java/tests/WomunityTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tests;\r\n\r\nimport base.BaseTest;\r\nimport org.testng.annotations.Test;\r\nimport pages.HomePage;\r\nimport pages.LoginPage;\r\nimport pages.WomanityMsgPage;\r\nimport utils.ConfigReader;\r\n\r\nimport static base.DriverManager.getDriver;\r\n\r\npublic class WomunityTest extends BaseTest {\r\n\r\n    @Test(groups = {\"smoke\"})\r\n    public void validLoginShouldNavigateToHome() throws InterruptedException {\r\n        LoginPage loginPage = new LoginPage(getDriver());\r\n        HomePage homePage = loginPage.login(ConfigReader.get(\"username\"), ConfigReader.get(\"password\"));\r\n        WomanityMsgPage womunity= new WomanityMsgPage( getDriver());\r\n        womunity.printVisibleCategories();\r\n        Thread.sleep(2000);\r\n        womunity.loadNextCategory();\r\n        Thread.sleep(2000);\r\n        womunity.printAllCategories();\r\n        Thread.sleep(2000);    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/tests/WomunityTest.java b/src/test/java/tests/WomunityTest.java
+--- a/src/test/java/tests/WomunityTest.java	(revision 811b4fe810b7b77034eaa086f7d50dfcd1fbf9b0)
++++ b/src/test/java/tests/WomunityTest.java	(date 1765349204574)
+@@ -21,5 +21,6 @@
+         womunity.loadNextCategory();
+         Thread.sleep(2000);
+         womunity.printAllCategories();
+-        Thread.sleep(2000);    }
++        Thread.sleep(2000);
++    }
+ }
+Index: src/main/java/pages/HomePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport base.BasePage;\r\nimport io.appium.java_client.AppiumBy;\r\nimport io.appium.java_client.android.AndroidDriver;\r\nimport org.openqa.selenium.By;\r\n\r\npublic class HomePage extends BasePage {\r\n\r\n    // Your \"Womunity\" image before it\r\n    private final By homeIcon = AppiumBy.xpath(\"//android.view.View[@content-desc='Womunity']/preceding-sibling::android.widget.ImageView\");\r\n    private final By myIdentityButton = AppiumBy.xpath(\"//android.widget.Button[@content-desc=\\\"My Identity\\\"]\");\r\n    private final By logoutButton= AppiumBy.xpath(\"//android.view.View[@content-desc=\\\"Logout\\\"]\");\r\n    private final By logout=AppiumBy.xpath(\"//android.widget.Button[@content-desc=\\\"Logout\\\"]\");\r\n\r\n\r\n    public HomePage(AndroidDriver driver) {\r\n        super(driver);\r\n    }\r\n\r\n    public HomePage tapHomeIcon() {\r\n        click(homeIcon);\r\n        return this;\r\n    }\r\n\r\n    public MyIdentityPage goToMyIdentity() {\r\n        click(myIdentityButton);\r\n        return new MyIdentityPage(driver);\r\n    }\r\n    public boolean isHomeIconDisplayed() {\r\n        return driver.findElement(homeIcon).isDisplayed();\r\n    }\r\n    // Check if logout option is visible\r\n    public void ensureLoggedOut() {\r\n        try {\r\n            tapHomeIcon();              // show menu where logout button appears\r\n            if (isLogoutVisible()) {    // if logout exists\r\n                tapLogout();\r\n                click(logout);// click logout\r\n            }\r\n        } catch (Exception e) {\r\n            // Do nothing — means already logged out or home menu not needed\r\n        }}\r\n        public boolean isLogoutVisible() {\r\n            return isElementDisplayed(logoutButton);\r\n        }\r\n    public LoginPage tapLogout() {\r\n        click(logoutButton);\r\n        return new LoginPage(driver);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/pages/HomePage.java b/src/main/java/pages/HomePage.java
+--- a/src/main/java/pages/HomePage.java	(revision 811b4fe810b7b77034eaa086f7d50dfcd1fbf9b0)
++++ b/src/main/java/pages/HomePage.java	(date 1765524249790)
+@@ -33,7 +33,7 @@
+     // Check if logout option is visible
+     public void ensureLoggedOut() {
+         try {
+-            tapHomeIcon();              // show menu where logout button appears
++            tapHomeIcon();
+             if (isLogoutVisible()) {    // if logout exists
+                 tapLogout();
+                 click(logout);// click logout
+Index: src/test/java/tests/LoginTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package tests;\r\n\r\nimport base.BaseTest;\r\nimport io.appium.java_client.AppiumBy;\r\nimport org.testng.Assert;\r\nimport pages.HomePage;\r\nimport pages.LoginPage;\r\nimport org.testng.annotations.Test;\r\nimport base.BasePage;\r\nimport utils.ConfigReader;\r\n\r\nimport javax.security.auth.login.LoginContext;\r\n\r\npublic class LoginTest extends BaseTest {\r\n\r\n    @Test(groups = {\"smoke\"})\r\n    public void validLoginShouldNavigateToHome() {\r\n        LoginPage loginPage = new LoginPage(getDriver());\r\n        HomePage homePage = loginPage.login(ConfigReader.get(\"username\"),ConfigReader.get(\"password\"));\r\n            Assert.assertTrue(homePage.isHomeIconDisplayed(),\r\n                    \"Home icon is not displayed. Login may have failed.\");\r\n\r\n        //homePage.tapHomeIcon();\r\n\r\n        System.out.println(\"Login test completed successfully.\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/tests/LoginTest.java b/src/test/java/tests/LoginTest.java
+--- a/src/test/java/tests/LoginTest.java	(revision 811b4fe810b7b77034eaa086f7d50dfcd1fbf9b0)
++++ b/src/test/java/tests/LoginTest.java	(date 1765867676144)
+@@ -13,7 +13,7 @@
+ 
+ public class LoginTest extends BaseTest {
+ 
+-    @Test(groups = {"smoke"})
++    @Test()
+     public void validLoginShouldNavigateToHome() {
+         LoginPage loginPage = new LoginPage(getDriver());
+         HomePage homePage = loginPage.login(ConfigReader.get("username"),ConfigReader.get("password"));
+Index: src/main/resources/config.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>appium.server.url=http://127.0.0.1:4723/wd/hub\r\n\r\ndevice.name=Android Phone\r\ndevice.udid=4XFI4PMFPJRKL77L\r\nplatform.name=Android\r\nplatform.version=14\r\n\r\napp.package=com.womaty.app.womaty_app.dev\r\napp.activity=com.womaty.app.womaty_app.MainActivity\r\n\r\nimplicit.wait.seconds=5\r\nexplicit.wait.seconds=20\r\n\r\nusername=mitali@mailinator.com\r\npassword=Pass@1234\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>ISO-8859-1
+===================================================================
+diff --git a/src/main/resources/config.properties b/src/main/resources/config.properties
+--- a/src/main/resources/config.properties	(revision 811b4fe810b7b77034eaa086f7d50dfcd1fbf9b0)
++++ b/src/main/resources/config.properties	(date 1765867651187)
+@@ -11,6 +11,7 @@
+ implicit.wait.seconds=5
+ explicit.wait.seconds=20
+ 
+-username=mitali@mailinator.com
+-password=Pass@1234
++username=neha@yopmail.com
++password=Nimap@123
++
+ 
